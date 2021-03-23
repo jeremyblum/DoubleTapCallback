@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonClick(View view) {
-        Log.d("CallbackExView", "Click detected.");
+        DoubleTapButton button = (DoubleTapButton) view;
+        Log.d("CallbackExView", "Click detected on '" + button.getText().toString() + "'");
     }
 }
